@@ -30,7 +30,6 @@ private String email;
 
 private Date dataEntrada;
 
-@Column(name="MEM_DATA_SAIDA")
 private Date dataSaida;
 
 
