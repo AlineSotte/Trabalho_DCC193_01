@@ -11,23 +11,26 @@ import lombok.*;
 import org.hibernate.validator.constraints.Email;
 import org.springframework.data.annotation.Id;
 
-@Table(name="SEDE")
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 class Sede {
 
 @Id
 @GeneratedValue(strategy = GenerationType.SEQUENCE)
-@Column(name="MEM_ID")
 private Long id;  
 
-@Column(name="MEM_FUNCAO")
-private String funcao;
+private String nomeFantasia;
 
-@Email
-@Column(name="MEM_EMAIL")
-private String email; 
+private String estadoFederacao; 
 
-@Column(name="MEM_DATA_ENTIDADE")
-private Date dataEntrada;
+private String dataEntrada;
 
-@Column(name="MEM_DATA_SAIDA")
-private Date dataSaida;
+private String bairro;
+
+private String telefone;
+
+private String endereco;
+
+}
