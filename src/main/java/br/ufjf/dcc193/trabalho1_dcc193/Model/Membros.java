@@ -16,6 +16,7 @@ import org.springframework.data.annotation.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 class Membros {
 
 @Id
@@ -29,6 +30,7 @@ private String email;
 
 private Date dataEntrada;
 
+@Column(name="MEM_DATA_SAIDA")
 private Date dataSaida;
 
 
