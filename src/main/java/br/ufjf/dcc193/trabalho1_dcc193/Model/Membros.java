@@ -13,7 +13,6 @@ import org.springframework.data.annotation.Id;
 
 
 
-@Table(name="MEMBROS")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,20 +20,15 @@ class Membros {
 
 @Id
 @GeneratedValue(strategy = GenerationType.SEQUENCE)
-@Column(name="MEM_ID")
 private Long id;  
 
-@Column(name="MEM_FUNCAO")
 private String funcao;
 
 @Email
-@Column(name="MEM_EMAIL")
 private String email; 
 
-@Column(name="MEM_DATA_ENTIDADE")
 private Date dataEntrada;
 
-@Column(name="MEM_DATA_SAIDA")
 private Date dataSaida;
 
 
