@@ -1,4 +1,4 @@
-package br.ufjf.dcc193.trabalho1_dcc193.Model;
+package br.ufjf.dcc193.trabalho1_dcc193.Modelo;
 
 import java.util.Date;
 import javax.persistence.Entity;
